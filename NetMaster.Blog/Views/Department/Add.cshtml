@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Department
+    <!-- general form elements disabled -->
+<div class="card card-blue">
+    <div class="card-header">
+        <h3 class="card-title">添加部门</h3>
+    </div>
+    <!-- /.card-header -->
+    <form asp-action="Add" role="form">
+        <div class="card-body">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- text input -->
+                    <div class="form-group">
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" type="text" class="form-control" placeholder="Enter ...">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label asp-for="Location"></label>
+                    <input asp-for="Location" class="form-control" placeholder="Enter ..." />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label asp-for="EmployeeCount"></label>
+                    <input asp-for="EmployeeCount" class="form-control" placeholder="Enter ..." />
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">提交</button>
+        </div>
+    </form>
+        <!-- /.card-body -->
+    </div>

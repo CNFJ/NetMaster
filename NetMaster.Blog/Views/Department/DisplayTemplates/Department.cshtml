@@ -1,0 +1,17 @@
+﻿@model Department
+<tr style="text-align:center;align">
+    
+    <td>@Model.Name</td>
+
+    <td>@Model.Location</td>
+    <td>@Model.EmployeeCount</td>
+    <td style="text-align:center">
+        <div class="btn-group">
+            <a asp-action="Index" asp-controller="Employee" asp-route-departmentId="@Model.Id" type="button" class="btn  btn-primary ">员工</a>
+            
+
+        </div>
+
+    </td>
+
+</tr>

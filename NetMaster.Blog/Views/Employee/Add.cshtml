@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Employee
+<div class="card card-blue">
+    <div class="card-header">
+        <h3 class="card-title">添加员工</h3>
+    </div>
+    <!-- /.card-header -->
+    <form asp-action="Add"  role="form">
+        <div class="card-body">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                        <label asp-for="FirstName"></label>
+                        <input asp-for="FirstName" type="text" class="form-control" placeholder="Enter ...">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                        <label asp-for="LastName"></label>
+                        <input asp-for="LastName" type="text" class="form-control" placeholder="Enter ...">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="Gender"></label>
+                        <select multiple asp-for="Gender" asp-items="Html.GetEnumSelectList<Gender>()" class="form-control">
+                        </select>
+                    </div>
+                </div>
+               
+            </div>
+            <input type="hidden" asp-for="DepartmentId" />
+
+
+
+
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">提交</button>
+        </div>
+    </form>
+    <!-- /.card-body -->
+</div>

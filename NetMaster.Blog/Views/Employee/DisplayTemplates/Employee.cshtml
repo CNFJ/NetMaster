@@ -1,0 +1,20 @@
+﻿@model Employee
+<tr style="text-align:center;align">
+
+    <td>@Model.FirstName@Model.LastName</td>
+
+    <td>@Model.Gender</td>
+    <td>@(Model.Fired == true ? "是" : "")</td>
+    <td style="text-align:center">
+        <div class="btn-group">
+            @{
+                if (Model.Fired == false) { 
+                <a asp-action="Fired" asp-controller="Employee" asp-route-employeeId="@Model.Id" type="button" class="btn  btn-danger ">解雇</a>
+                }
+            }
+
+        </div>
+
+    </td>
+
+</tr>

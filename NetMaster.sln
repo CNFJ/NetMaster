@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetMaster.Blog", "NetMaster
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{B0DBF371-702C-4A50-8B53-1C282422A8B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMaster.API", "NetMaster.API\NetMaster.API.csproj", "{393E1ACE-32C6-4AC6-A06F-041775BB5F5C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{B0DBF371-702C-4A50-8B53-1C282422A8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0DBF371-702C-4A50-8B53-1C282422A8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0DBF371-702C-4A50-8B53-1C282422A8B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{393E1ACE-32C6-4AC6-A06F-041775BB5F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{393E1ACE-32C6-4AC6-A06F-041775BB5F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{393E1ACE-32C6-4AC6-A06F-041775BB5F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{393E1ACE-32C6-4AC6-A06F-041775BB5F5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
